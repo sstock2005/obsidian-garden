@@ -13,6 +13,15 @@ latest release:
 curl https://raw.githubusercontent.com/sstock2005/obsidian-garden/main/install.sh | sh
 ```
 
+## To Deploy to GitHub Pages
+```
+
+    Add index.md (that will act as entry point) in your obsidian vault.
+    Run obsidian-garden build with proper --base-url option (your gh pages url) and point the OUTPUT_DIRECTORY to your github repo.
+    Add empty .nojekyll file in your repo to fix the path issue
+    Commit and push
+```
+
 ## Features
 
 - [x] Generate fully static HTML files - SEO friendly and easy to deploy
